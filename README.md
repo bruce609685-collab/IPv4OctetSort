@@ -2,6 +2,8 @@
 
 一个 Windows 小工具：给一批 IPv4 地址正确排序，并把网段里**没被占用的地址**标出来。
 
+![预览图](https://raw.githubusercontent.com/bruce609685-collab/IPv4OctetSort/refs/heads/main/%E9%A2%84%E8%A7%88%E5%9B%BE.jpg)
+
 ## 它解决什么问题
 
 用 Excel 或记事本排序时，`192.168.1.153` 会排在 `192.168.1.8` 前面（逐字符比较时 `1` < `8`），
