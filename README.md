@@ -4,6 +4,8 @@
 
 ![预览图](https://raw.githubusercontent.com/bruce609685-collab/IPv4OctetSort/refs/heads/main/%E9%A2%84%E8%A7%88%E5%9B%BE.jpg)
 
+![预览图](https://raw.githubusercontent.com/bruce609685-collab/IPv4OctetSort/refs/heads/main/Preview%20Image.jpg)
+
 ## 它解决什么问题
 
 用 Excel 或记事本排序时，`192.168.1.153` 会排在 `192.168.1.8` 前面（逐字符比较时 `1` < `8`），
@@ -55,7 +57,7 @@ build\build_tests.bat
 
 请到 [Releases](https://github.com/bruce609685-collab/IPv4OctetSort/releases) 页面下载最新版本。
 
-当前版本：**v0.2**
+当前版本：**v0.3**
 
 ## 许可证
 
