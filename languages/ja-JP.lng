@@ -1,0 +1,102 @@
+# ============================================================
+#  IPv4OctetSort 言語パック: 日本語 (日本)
+#  フォーマットの説明: docs/语言包制作说明.md
+#  値の先頭・末尾の空白は削除されます。区切り文字は
+#  書式文字列内に記述してください。エスケープ: \t \n \r \\
+# ============================================================
+
+locale = ja-JP
+name = 日本語
+
+# ---- メインウィンドウ ----
+WindowTitle = IPv4OctetSort — IPv4アドレス並べ替えツール
+StartupError = 起動に失敗しました：メインウィンドウを作成できません。
+
+# ---- メニューバー ----
+MenuFile = ファイル(&F)
+MenuClear = 入力をクリア(&C)\tCtrl+D
+MenuPaste = 入力へ貼り付け(&P)\tCtrl+V
+MenuExit = 終了(&X)\tAlt+F4
+MenuEdit = 編集(&E)
+MenuCopy = 結果をコピー(&C)\tCtrl+C
+MenuCopyGaps = 空きアドレスのみコピー(&G)
+MenuView = 表示(&V)
+MenuAsc = 昇順に並べ替え(&A)
+MenuDesc = 降順に並べ替え(&D)
+MenuAbout = バージョン情報(&A)
+
+# ---- ツールバー ----
+BtnAsc = 昇順
+BtnDesc = 降順
+SegLabel = 並べ替え基準
+ChkDedupe = 重複をマージ
+ChkFill = 空きを埋める
+BtnUpdate = 更新を確認
+LangArrow = ▼
+
+# ---- 入力パネル ----
+InputTitle = 入力
+BtnClear = クリア
+StatEntries = %d 件
+StatUnrecognized = 未認識 %d 件
+StatMerged = 重複をマージ済み
+InputHint = アドレスを貼り付けてください（1 行に 1 件、カンマまたはスペース区切りも可）
+FaultFmt = %d 行目 · %s — %s
+FaultMore = その他 %d 件は表示しません
+
+# ---- 無効な項目の理由（core::ReasonKind；%d はオクテット番号） ----
+ReasonFormat = IPv4 のドット付き 10 進数ではありません
+ReasonOctetFmt = %d 番目のオクテットが 0-255 の範囲外です
+ReasonPrefix = プレフィックス長が 0-32 の範囲外です
+
+# ---- 差異オクテットの説明（FR-3.4；文は i18n.cpp で組み立て） ----
+HintNoDiff = 4 つのオクテットはすべて一致しており、差異のあるオクテットはありません。空きの埋め込みはオクテット D 単位で行われます
+HintIdentOne = オクテット %s
+HintIdentMany = オクテット %s
+HintJoinSep = 、
+HintMulti = %sは一致、オクテット %s には複数の値があります（%s）。オクテット %s のみで並べ替え可能です
+DiffMore = ほか %d 個の値
+
+# ---- ステータスバーと操作ヒント ----
+StReady = 準備完了
+StReadyPending = 準備完了 · 並べ替え待ち
+StFilledPre = 空き埋め込み済み（
+StSortedPre = 並べ替え済み（
+StClose = ）
+FmtSlots = スロット %d · 空き %d
+FmtTotal = 合計 %d 件
+BySegFmt = オクテット %s 基準
+SegDash = オクテット：-
+SegNone = オクテット：差異なし
+SegFmt = オクテット：%s
+MsgCleared = 入力をクリアしました
+MsgCopied = 結果をクリップボードにコピーしました
+MsgNeedFill = 空きアドレスをコピーする前に「空きを埋める」をオンにしてください
+MsgNoGaps = 空きアドレスはありません
+MsgCopiedGaps = 空きアドレスを %d 件コピーしました
+MsgPasteFocus = 入力欄を選択しました。Ctrl+V で貼り付けてください
+DirAsc = 昇順
+DirDesc = 降順
+
+# ---- 結果パネル ----
+ResultTitle = 結果
+BtnCopy = 結果をコピー
+CopyMsg = コピー済み
+ColAddress = アドレス
+ColSequence = 完全なシーケンス
+ColYourList = あなたの一覧
+FmtPanelFill = %d 行 · 空き %d 件 · %s
+FmtPanelPlain = %d 件 · %s
+EmptyHintA = 「
+EmptyHintB = 」または「
+EmptyHintC = 」をクリックしてください。
+GapText = IPアドレス空き
+NoticeFmt = 現在のオクテットで埋め込むと %d スロットが必要になり、上限 8,192 を超えます。今回は通常の一覧で表示します。入力をより少ないサブネットに絞ると埋め込めます。
+
+# ---- バージョン情報ダイアログ ----
+AboutCaption = IPv4OctetSort について
+AboutNameCn = 中国語名
+AboutNameEn = 英語名
+AboutVersion = バージョン
+AboutDate = ビルド日
+AboutOk = OK

@@ -1,0 +1,103 @@
+# ============================================================
+#  IPv4OctetSort language pack: French (France)
+#  Guide du format : docs/语言包制作说明.md
+#  Les espaces en début/fin de valeur sont supprimés ;
+#  les séparateurs se placent dans les chaînes de format.
+#  Séquences d'échappement : \t \n \r \\
+# ============================================================
+
+locale = fr-FR
+name = Français
+
+# ---- Fenêtre principale ----
+WindowTitle = IPv4OctetSort — Trieur d'adresses IPv4
+StartupError = Échec du démarrage : impossible de créer la fenêtre principale.
+
+# ---- Barre de menus ----
+MenuFile = &Fichier
+MenuClear = &Effacer la saisie\tCtrl+D
+MenuPaste = &Coller dans la saisie\tCtrl+V
+MenuExit = &Quitter\tAlt+F4
+MenuEdit = &Édition
+MenuCopy = &Copier le résultat\tCtrl+C
+MenuCopyGaps = Copier &uniquement les adresses libres
+MenuView = &Affichage
+MenuAsc = Tri &croissant
+MenuDesc = Tri dé&croissant
+MenuAbout = &À propos
+
+# ---- Barre d'outils ----
+BtnAsc = Croissant
+BtnDesc = Décroissant
+SegLabel = Trier par
+ChkDedupe = Fusionner les doublons
+ChkFill = Remplir les vides
+BtnUpdate = Mises à jour
+LangArrow = ▼
+
+# ---- Panneau de saisie ----
+InputTitle = Saisie
+BtnClear = Effacer
+StatEntries = %d adresses
+StatUnrecognized = %d non reconnues
+StatMerged = doublons fusionnés
+InputHint = Collez les adresses, une par ligne ; virgules ou espaces acceptés aussi
+FaultFmt = Ligne %d · %s — %s
+FaultMore = %d autres non affichées
+
+# ---- Raisons d'invalidité (core::ReasonKind ; %d = numéro d'octet) ----
+ReasonFormat = ce n'est pas une adresse IPv4 décimale pointée
+ReasonOctetFmt = octet %d hors de la plage 0-255
+ReasonPrefix = longueur de préfixe hors de la plage 0-32
+
+# ---- Explication de l'octet distinct (FR-3.4 ; assemblée dans i18n.cpp) ----
+HintNoDiff = Les quatre octets sont identiques, aucun octet ne diffère ; le remplissage s'effectue le long de l'octet D
+HintIdentOne = Octet %s
+HintIdentMany = Octets %s
+HintJoinSep = ,\x20
+HintMulti = %s identiques ; l'octet %s a plusieurs valeurs (%s), tri possible uniquement sur l'octet %s
+DiffMore = parmi %d valeurs
+
+# ---- Barre d'état et messages ----
+StReady = Prêt
+StReadyPending = Prêt · en attente de tri
+StFilledPre = Rempli (
+StSortedPre = Trié (
+StClose = )
+FmtSlots = %d adresses · %d libres
+FmtTotal = %d au total
+BySegFmt = par octet %s
+SegDash = Octet : -
+SegNone = Octet : aucune différence
+SegFmt = Octet : %s
+MsgCleared = Saisie effacée
+MsgCopied = Résultat copié dans le presse-papiers
+MsgNeedFill = Cochez « Remplir les vides » avant de copier les adresses libres
+MsgNoGaps = Aucune adresse libre
+MsgCopiedGaps = %d adresses libres copiées
+MsgPasteFocus = Saisie sélectionnée — appuyez sur Ctrl+V pour coller
+DirAsc = croissant
+DirDesc = décroissant
+
+# ---- Panneau de résultat ----
+ResultTitle = Résultat
+BtnCopy = Copier le résultat
+CopyMsg = Copié
+ColAddress = Adresse
+ColSequence = Séquence complète
+ColYourList = Votre liste
+FmtPanelFill = %d lignes · %d libres · %s
+FmtPanelPlain = %d adresses · %s
+EmptyHintA = Cliquez sur «
+EmptyHintB = » ou «
+EmptyHintC = » pour commencer.
+GapText = Adresse IP libre
+NoticeFmt = Le remplissage selon l'octet actuel demande %d adresses, au-delà de la limite de 8 192 ; affichage sous forme de liste simple. Réduisez la saisie à moins de sous-réseaux pour activer le remplissage.
+
+# ---- Boîte À propos ----
+AboutCaption = À propos d'IPv4OctetSort
+AboutNameCn = Nom chinois
+AboutNameEn = Nom anglais
+AboutVersion = Version
+AboutDate = Date de compilation
+AboutOk = OK

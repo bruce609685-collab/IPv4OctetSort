@@ -1,0 +1,102 @@
+# ============================================================
+#  IPv4OctetSort 语言包：简体中文（中国）
+#  格式说明见 docs/语言包制作说明.md
+#  值首尾的空白会被去除；条目间的分隔符（空格、间隔号）
+#  写在本文件的格式串内。转义：\t \n \r \\
+# ============================================================
+
+locale = zh-CN
+name = 简体中文
+
+# ---- 主窗口 ----
+WindowTitle = IPv4OctetSort — IPv4网络地址排序器
+StartupError = 程序启动失败：主窗口创建失败。
+
+# ---- 菜单栏 ----
+MenuFile = 文件(&F)
+MenuClear = 清空输入(&C)\tCtrl+D
+MenuPaste = 粘贴到输入(&P)\tCtrl+V
+MenuExit = 退出(&X)\tAlt+F4
+MenuEdit = 编辑(&E)
+MenuCopy = 复制结果(&C)\tCtrl+C
+MenuCopyGaps = 仅复制空缺地址(&G)
+MenuView = 视图(&V)
+MenuAsc = 升序排列(&A)
+MenuDesc = 降序排列(&D)
+MenuAbout = 关于(&A)
+
+# ---- 工具栏 ----
+BtnAsc = 升序排列
+BtnDesc = 降序排列
+SegLabel = 排序段位
+ChkDedupe = 合并重复
+ChkFill = 缺位填充
+BtnUpdate = 检查更新
+LangArrow = ▼
+
+# ---- 输入面板 ----
+InputTitle = 输入
+BtnClear = 清空
+StatEntries = %d 条
+StatUnrecognized = %d 条未识别
+StatMerged = 已合并重复
+InputHint = 粘贴地址，一行一个，逗号或空格分隔也可以
+FaultFmt = 第 %d 行 · %s — %s
+FaultMore = 另有 %d 条未显示
+
+# ---- 无效项原因（分类见 core::ReasonKind；%d 为段序号） ----
+ReasonFormat = 格式不是 IPv4 点分十进制
+ReasonOctetFmt = 第 %d 段超出 0-255
+ReasonPrefix = 掩码长度超出 0-32
+
+# ---- 段位判定说明（FR-3.4；整句组句见 i18n.cpp） ----
+HintNoDiff = 四段取值一致，没有差异段；缺位填充按 D 段铺槽位
+HintIdentOne = %s 段
+HintIdentMany = %s 段
+HintJoinSep = 、
+HintMulti = %s取值一致，%s段有多个取值（%s），仅可按%s段排序
+DiffMore = 等 %d 个值
+
+# ---- 状态栏与操作提示 ----
+StReady = 就绪
+StReadyPending = 就绪 · 待排序
+StFilledPre = 已补位（
+StSortedPre = 已排序（
+StClose = ）
+FmtSlots = 槽位 %d · 空缺 %d
+FmtTotal = 共 %d 条
+BySegFmt = 按 %s 段
+SegDash = 段位：—
+SegNone = 段位：无差异
+SegFmt = 段位：%s 段
+MsgCleared = 已清空输入
+MsgCopied = 结果已复制到剪贴板
+MsgNeedFill = 请先勾选「缺位填充」再复制空缺地址
+MsgNoGaps = 没有空缺地址
+MsgCopiedGaps = 已复制 %d 个空缺地址
+MsgPasteFocus = 已聚焦输入框，按 Ctrl+V 粘贴
+DirAsc = 升序
+DirDesc = 降序
+
+# ---- 结果面板 ----
+ResultTitle = 结果
+BtnCopy = 复制结果
+CopyMsg = 已复制
+ColAddress = 地址
+ColSequence = 完整序列
+ColYourList = 你的清单
+FmtPanelFill = %d 行 · 空缺 %d 个 · %s
+FmtPanelPlain = %d 条 · %s
+EmptyHintA = 点「
+EmptyHintB = 」或「
+EmptyHintC = 」开始。
+GapText = IP地址空缺
+NoticeFmt = 按当前段位要铺 %d 个槽位，超过上限 8,192 个，本次未补位，已按普通列表显示。把输入收窄到更少的网段后即可补位。
+
+# ---- 关于对话框 ----
+AboutCaption = 关于 IPv4OctetSort
+AboutNameCn = 程序名称
+AboutNameEn = 英文名称
+AboutVersion = 版本
+AboutDate = 构建日期
+AboutOk = 确定

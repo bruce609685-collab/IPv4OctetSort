@@ -1,0 +1,103 @@
+# ============================================================
+#  IPv4OctetSort language pack: English (United States)
+#  This is the default and fallback language (FR-12).
+#  Format guide: docs/语言包制作说明.md
+#  Values are trimmed; put separators (spaces, middots) in the
+#  format strings themselves. Escape sequences: \t \n \r \\
+# ============================================================
+
+locale = en-US
+name = English
+
+# ---- Main window ----
+WindowTitle = IPv4OctetSort — IPv4 Address Sorter
+StartupError = Startup failed: could not create the main window.
+
+# ---- Menu bar ----
+MenuFile = &File
+MenuClear = &Clear Input\tCtrl+D
+MenuPaste = &Paste to Input\tCtrl+V
+MenuExit = E&xit\tAlt+F4
+MenuEdit = &Edit
+MenuCopy = &Copy Result\tCtrl+C
+MenuCopyGaps = Copy &Gaps Only
+MenuView = &View
+MenuAsc = Sort &Ascending
+MenuDesc = Sort &Descending
+MenuAbout = &About
+
+# ---- Toolbar ----
+BtnAsc = Ascending
+BtnDesc = Descending
+SegLabel = Sort by
+ChkDedupe = Merge duplicates
+ChkFill = Fill gaps
+BtnUpdate = Check updates
+LangArrow = ▼
+
+# ---- Input panel ----
+InputTitle = Input
+BtnClear = Clear
+StatEntries = %d entries
+StatUnrecognized = %d unrecognized
+StatMerged = merged duplicates
+InputHint = Paste addresses, one per line; commas or spaces also work
+FaultFmt = Line %d · %s — %s
+FaultMore = %d more not shown
+
+# ---- Invalid-item reasons (core::ReasonKind; %d = octet number) ----
+ReasonFormat = not a dotted-decimal IPv4 address
+ReasonOctetFmt = octet %d out of range 0-255
+ReasonPrefix = prefix length out of range 0-32
+
+# ---- Diff-octet explanation (FR-3.4; sentence assembled in i18n.cpp) ----
+HintNoDiff = All four octets are identical - no differing octet; gaps fill along octet D
+HintIdentOne = Octet %s
+HintIdentMany = Octets %s
+HintJoinSep = ,
+HintMulti = %s identical; octet %s has multiple values (%s), sort only by octet %s
+DiffMore = of %d values
+
+# ---- Status bar and action hints ----
+StReady = Ready
+StReadyPending = Ready - awaiting sort
+StFilledPre = Filled (
+StSortedPre = Sorted (
+StClose = )
+FmtSlots = %d slots · %d gaps
+FmtTotal = %d total
+BySegFmt = by octet %s
+SegDash = Octet: -
+SegNone = Octet: none
+SegFmt = Octet: %s
+MsgCleared = Input cleared
+MsgCopied = Result copied to clipboard
+MsgNeedFill = Tick "Fill gaps" before copying gap addresses
+MsgNoGaps = No gap addresses
+MsgCopiedGaps = Copied %d gap addresses
+MsgPasteFocus = Input focused - press Ctrl+V to paste
+DirAsc = ascending
+DirDesc = descending
+
+# ---- Result panel ----
+ResultTitle = Result
+BtnCopy = Copy Result
+CopyMsg = Copied
+ColAddress = Address
+ColSequence = Full sequence
+ColYourList = Your list
+FmtPanelFill = %d rows · %d gaps · %s
+FmtPanelPlain = %d entries · %s
+EmptyHintA = Click "
+EmptyHintB = " or "
+EmptyHintC = " to start.
+GapText = IP address gap
+NoticeFmt = Filling by the current octet needs %d slots, above the 8,192 limit - not filled; showing a plain list. Narrow the input to fewer subnets to enable filling.
+
+# ---- About dialog ----
+AboutCaption = About IPv4OctetSort
+AboutNameCn = Chinese name
+AboutNameEn = English name
+AboutVersion = Version
+AboutDate = Build date
+AboutOk = OK

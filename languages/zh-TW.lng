@@ -1,0 +1,102 @@
+# ============================================================
+#  IPv4OctetSort 語言包：繁體中文（台灣）
+#  格式說明見 docs/语言包制作说明.md
+#  值首尾的空白會被去除；項目間的分隔符號寫在格式串內。
+#  轉義：\t \n \r \\
+# ============================================================
+
+locale = zh-TW
+name = 繁體中文
+
+# ---- 主視窗 ----
+WindowTitle = IPv4OctetSort — IPv4 網路位址排序器
+StartupError = 程式啟動失敗：無法建立主視窗。
+
+# ---- 功能表列 ----
+MenuFile = 檔案(&F)
+MenuClear = 清除輸入(&C)\tCtrl+D
+MenuPaste = 貼到輸入(&P)\tCtrl+V
+MenuExit = 結束(&X)\tAlt+F4
+MenuEdit = 編輯(&E)
+MenuCopy = 複製結果(&C)\tCtrl+C
+MenuCopyGaps = 僅複製空缺位址(&G)
+MenuView = 檢視(&V)
+MenuAsc = 遞增排序(&A)
+MenuDesc = 遞減排序(&D)
+MenuAbout = 關於(&A)
+
+# ---- 工具列 ----
+BtnAsc = 遞增排序
+BtnDesc = 遞減排序
+SegLabel = 排序段位
+ChkDedupe = 合併重複
+ChkFill = 填補空缺
+BtnUpdate = 檢查更新
+LangArrow = ▼
+
+# ---- 輸入面板 ----
+InputTitle = 輸入
+BtnClear = 清除
+StatEntries = %d 筆
+StatUnrecognized = %d 筆無法辨識
+StatMerged = 已合併重複
+InputHint = 貼上位址，一行一筆，也可以用逗號或空格分隔
+FaultFmt = 第 %d 行 · %s — %s
+FaultMore = 另有 %d 筆未顯示
+
+# ---- 無效項原因（分類見 core::ReasonKind；%d 為段序號） ----
+ReasonFormat = 格式不是 IPv4 點分十進位
+ReasonOctetFmt = 第 %d 段超出 0-255
+ReasonPrefix = 遮罩長度超出 0-32
+
+# ---- 段位判定說明（FR-3.4；整句組句見 i18n.cpp） ----
+HintNoDiff = 四段取值一致，沒有差異段；填補空缺沿 D 段鋪設槽位
+HintIdentOne = %s 段
+HintIdentMany = %s 段
+HintJoinSep = 、
+HintMulti = %s取值一致，%s段有多個取值（%s），僅能按%s段排序
+DiffMore = 等 %d 個值
+
+# ---- 狀態列與操作提示 ----
+StReady = 就緒
+StReadyPending = 就緒 · 待排序
+StFilledPre = 已填補（
+StSortedPre = 已排序（
+StClose = ）
+FmtSlots = 槽位 %d · 空缺 %d
+FmtTotal = 共 %d 筆
+BySegFmt = 按 %s 段
+SegDash = 段位：—
+SegNone = 段位：無差異
+SegFmt = 段位：%s 段
+MsgCleared = 已清除輸入
+MsgCopied = 結果已複製到剪貼簿
+MsgNeedFill = 請先勾選「填補空缺」再複製空位址
+MsgNoGaps = 沒有空缺的位址
+MsgCopiedGaps = 已複製 %d 個空位址
+MsgPasteFocus = 已將焦點移至輸入框，按 Ctrl+V 貼上
+DirAsc = 遞增
+DirDesc = 遞減
+
+# ---- 結果面板 ----
+ResultTitle = 結果
+BtnCopy = 複製結果
+CopyMsg = 已複製
+ColAddress = 位址
+ColSequence = 完整序列
+ColYourList = 您的清單
+FmtPanelFill = %d 列 · 空缺 %d 個 · %s
+FmtPanelPlain = %d 筆 · %s
+EmptyHintA = 按「
+EmptyHintB = 」或「
+EmptyHintC = 」開始。
+GapText = IP 位址空缺
+NoticeFmt = 依目前段位需鋪設 %d 個槽位，超過上限 8,192 個，本次未填補，已改以一般清單顯示。請將輸入縮小到較少的網段後再填補。
+
+# ---- 關於對話方塊 ----
+AboutCaption = 關於 IPv4OctetSort
+AboutNameCn = 程式名稱
+AboutNameEn = 英文名稱
+AboutVersion = 版本
+AboutDate = 建置日期
+AboutOk = 確定

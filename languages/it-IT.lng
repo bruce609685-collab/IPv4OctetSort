@@ -1,0 +1,103 @@
+# ============================================================
+#  IPv4OctetSort language pack: Italian (Italy)
+#  Guida al formato: docs/语言包制作说明.md
+#  Gli spazi all'inizio/fine del valore vengono rimossi;
+#  i separatori vanno inseriti nelle stringhe di formato.
+#  Sequenze di escape: \t \n \r \\
+# ============================================================
+
+locale = it-IT
+name = Italiano
+
+# ---- Finestra principale ----
+WindowTitle = IPv4OctetSort — Utilità di ordinamento indirizzi IPv4
+StartupError = Avvio non riuscito: impossibile creare la finestra principale.
+
+# ---- Barra dei menu ----
+MenuFile = &File
+MenuClear = &Cancella input\tCtrl+D
+MenuPaste = &Incolla nell'input\tCtrl+V
+MenuExit = &Esci\tAlt+F4
+MenuEdit = &Modifica
+MenuCopy = &Copia risultato\tCtrl+C
+MenuCopyGaps = Copia &solo indirizzi vuoti
+MenuView = &Visualizza
+MenuAsc = Ordina in ordine c&rescente
+MenuDesc = Ordina in ordine &decrescente
+MenuAbout = I&nformazioni
+
+# ---- Barra degli strumenti ----
+BtnAsc = Crescente
+BtnDesc = Decrescente
+SegLabel = Ordina per
+ChkDedupe = Unisci duplicati
+ChkFill = Riempi vuoti
+BtnUpdate = Aggiorna
+LangArrow = ▼
+
+# ---- Pannello di input ----
+InputTitle = Input
+BtnClear = Cancella
+StatEntries = %d indirizzi
+StatUnrecognized = %d non riconosciuti
+StatMerged = duplicati uniti
+InputHint = Incolla gli indirizzi, uno per riga; accetta anche virgole o spazi
+FaultFmt = Riga %d · %s — %s
+FaultMore = altri %d non visualizzati
+
+# ---- Motivi di invalidità (core::ReasonKind; %d = numero di ottetto) ----
+ReasonFormat = non è un indirizzo IPv4 decimale puntato
+ReasonOctetFmt = ottetto %d fuori dall'intervallo 0-255
+ReasonPrefix = lunghezza del prefisso fuori dall'intervallo 0-32
+
+# ---- Spiegazione dell'ottetto distinto (FR-3.4; frase assemblata in i18n.cpp) ----
+HintNoDiff = I quattro ottetti sono identici, nessun ottetto differisce; i vuoti vengono riempiti lungo l'ottetto D
+HintIdentOne = Ottetto %s
+HintIdentMany = Ottetti %s
+HintJoinSep = ,\x20
+HintMulti = %s identici; l'ottetto %s ha più valori (%s), ordinamento possibile solo per ottetto %s
+DiffMore = di %d valori
+
+# ---- Barra di stato e messaggi ----
+StReady = Pronto
+StReadyPending = Pronto · in attesa di ordinamento
+StFilledPre = Riempito (
+StSortedPre = Ordinato (
+StClose = )
+FmtSlots = %d indirizzi · %d vuoti
+FmtTotal = %d in totale
+BySegFmt = per ottetto %s
+SegDash = Ottetto: -
+SegNone = Ottetto: nessuna differenza
+SegFmt = Ottetto: %s
+MsgCleared = Input cancellato
+MsgCopied = Risultato copiato negli appunti
+MsgNeedFill = Seleziona «Riempi vuoti» prima di copiare gli indirizzi vuoti
+MsgNoGaps = Nessun indirizzo vuoto
+MsgCopiedGaps = %d indirizzi vuoti copiati
+MsgPasteFocus = Input selezionato — premere Ctrl+V per incollare
+DirAsc = crescente
+DirDesc = decrescente
+
+# ---- Pannello dei risultati ----
+ResultTitle = Risultato
+BtnCopy = Copia risultato
+CopyMsg = Copiato
+ColAddress = Indirizzo
+ColSequence = Sequenza completa
+ColYourList = Il tuo elenco
+FmtPanelFill = %d righe · %d vuoti · %s
+FmtPanelPlain = %d indirizzi · %s
+EmptyHintA = Fare clic su «
+EmptyHintB = » o «
+EmptyHintC = » per iniziare.
+GapText = Indirizzo IP vuoto
+NoticeFmt = Il riempimento secondo l'ottetto corrente richiede %d indirizzi, oltre il limite di 8.192; visualizzazione come elenco semplice. Riduci l'input a meno sottoreti per abilitare il riempimento.
+
+# ---- Finestra Informazioni ----
+AboutCaption = Informazioni su IPv4OctetSort
+AboutNameCn = Nome cinese
+AboutNameEn = Nome inglese
+AboutVersion = Versione
+AboutDate = Data di compilazione
+AboutOk = OK
