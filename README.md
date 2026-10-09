@@ -1,10 +1,14 @@
 # IPv4 网络地址排序器（IPv4OctetSort）
 
+当前版本：**v0.4**
+
 一个 Windows 小工具：给一批 IPv4 地址正确排序，并把网段里**没被占用的地址**标出来。
 
 ![预览图](https://raw.githubusercontent.com/bruce609685-collab/IPv4OctetSort/refs/heads/main/%E9%A2%84%E8%A7%88%E5%9B%BE.jpg)
 
 ![预览图](https://raw.githubusercontent.com/bruce609685-collab/IPv4OctetSort/refs/heads/main/PreviewImage.jpg)
+
+![预览图](https://raw.githubusercontent.com/bruce609685-collab/IPv4OctetSort/refs/heads/main/%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81.jpg)
 
 ## 它解决什么问题
 
@@ -19,6 +23,7 @@
 - **合并重复**：同一网段的重复地址只保留一条
 - **一键复制**：复制结果可直接粘进 Excel；补位模式下是「完整序列 + 你的清单」两列对照
 - **无效输入提示**：格式错误、段值超范围、掩码超范围分别给出原因，不影响其它地址的处理
+- **多语言**：界面可在 简体中文 / 繁體中文 / English / Français / Italiano / Русский / 日本語 之间切换
 
 ## 使用
 
@@ -56,8 +61,6 @@ build\build_tests.bat
 ## 下载
 
 请到 [Releases](https://github.com/bruce609685-collab/IPv4OctetSort/releases) 页面下载最新版本。
-
-当前版本：**v0.3**
 
 ## 许可证
 
